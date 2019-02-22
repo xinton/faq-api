@@ -5,5 +5,5 @@ from django.db import models
 
 class Topic(models.Model):
     created = models.DateTimeField(auto_now_add=True)
-    tittle = models.CharField(max_length=100, blank=False)
+    title = models.CharField(max_length=100, blank=False)
     text = models.TextField()
