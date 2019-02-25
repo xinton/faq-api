@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .auth import CustomAuthToken
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/', CustomAuthToken.as_view()),
     path('', include('faq.urls')),
 ]
