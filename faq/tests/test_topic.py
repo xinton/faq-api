@@ -1,5 +1,5 @@
 """
-    Teste de API para requisições sobre Atividades
+    Teste de API para requisições sobre Topicos
 """
 from django.test import TestCase, Client
 from django.urls import reverse

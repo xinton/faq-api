@@ -12,10 +12,11 @@ class Topic(models.Model):
     def __str__(self):
         return self.title
 
-""" 
-    Custom user model
-"""
+
 class User(AbstractUser):
+    """
+    Custom user model
+    """
     def __str__(self):
         return self.username
 
@@ -23,4 +24,4 @@ class User(AbstractUser):
 class HelpfulTopic(models.Model):
     user = models.ForeignKey("User", null=False, on_delete=models.PROTECT)
     topic = models.ForeignKey("Topic", null=False, on_delete=models.PROTECT)
-    helpful= models.BooleanField(default=False)
+    helpful = models.BooleanField(default=False)

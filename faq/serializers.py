@@ -7,6 +7,7 @@ class TopicSerializer(serializers.ModelSerializer):
         model = Topic
         fields = ('id', 'title', 'text')
 
+
 class HelpfulTopicSerializer(serializers.ModelSerializer):
     class Meta:
         model = HelpfulTopic
