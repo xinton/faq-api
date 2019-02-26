@@ -1,6 +1,7 @@
 from .models import Topic, HelpfulTopic
 from .serializers import TopicSerializer, HelpfulTopicSerializer
 from rest_framework import generics
+from django.http import Http404
 
 
 class TopicList(generics.ListCreateAPIView):
